@@ -19,6 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - run: cargo version
+      - run: cargo install mdbook
+      - run: mdbook --version
       # - name: Setup mdBook
       #   uses: extractions/setup-crate@v1
       #   with:
